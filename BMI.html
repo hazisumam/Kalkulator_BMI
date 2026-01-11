@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Health Meter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="bmi-container">
+    <h1>💙 BMI Health Meter</h1>
+    <p class="subtitle">Hitung dan pantau kondisi tubuhmu</p>
+
+    <div class="form">
+        <input type="number" id="weight" placeholder="⚖️ Berat Badan (kg)">
+        <input type="number" id="height" placeholder="📏 Tinggi Badan (cm)">
+        <button onclick="calculateBMI()">Hitung BMI</button>
+    </div>
+
+    <div class="gauge-wrapper">
+        <div class="gauge">
+            <div class="needle" id="needle"></div>
+            <div class="center-dot"></div>
+        </div>
+
+        <div class="labels">
+            <span class="kurus">Kurus</span>
+            <span class="ideal">Ideal</span>
+            <span class="gemuk">Gemuk</span>
+            <span class="obesitas">Obesitas</span>
+        </div>
+    </div>
+
+    <div class="result-card">
+        <div id="bmiValue">BMI: -</div>
+        <div id="bmiStatus">Status: -</div>
+    </div>
+
+    <a href="index.html" class="back-btn">← Kembali</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
